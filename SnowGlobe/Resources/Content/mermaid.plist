@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Little Mermaid</string>
+	<key>location</key>
+	<string>Copenhagen, Denmark</string>
+	<key>background</key>
+	<string>mermaid.png</string>
+	<key>shape.enabled</key>
+	<true/>
+	<key>shape.size</key>
+	<string>{ 300, 300 }</string>
+	<key>shape.0</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 137, 27 }</string>
+		<key>p1</key>
+		<string>{ 158, 27 }</string>
+	</dict>
+	<key>shape.1</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 124, 35 }</string>
+		<key>p1</key>
+		<string>{ 136, 35 }</string>
+	</dict>
+	<key>shape.2</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 147, 45 }</string>
+		<key>p1</key>
+		<string>{ 166, 45 }</string>
+	</dict>
+	<key>shape.3</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 117, 84 }</string>
+		<key>p1</key>
+		<string>{ 130, 84 }</string>
+	</dict>
+	<key>shape.4</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 169, 81 }</string>
+		<key>p1</key>
+		<string>{ 182, 81 }</string>
+	</dict>
+	<key>shape.5</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 184, 89 }</string>
+		<key>p1</key>
+		<string>{ 195, 89 }</string>
+	</dict>
+	<key>shape.6</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 133, 179 }</string>
+		<key>p1</key>
+		<string>{ 150, 179 }</string>
+	</dict>
+	<key>shape.7</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 113, 183 }</string>
+		<key>p1</key>
+		<string>{ 133, 183 }</string>
+	</dict>
+	<key>shape.8</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 115, 201 }</string>
+		<key>p1</key>
+		<string>{ 134, 201 }</string>
+	</dict>
+	<key>shape.9</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 56, 212 }</string>
+		<key>p1</key>
+		<string>{ 97, 212 }</string>
+	</dict>
+	<key>shape.10</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 64, 226 }</string>
+		<key>p1</key>
+		<string>{ 111, 226 }</string>
+	</dict>
+	<key>shape.11</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 194, 215 }</string>
+		<key>p1</key>
+		<string>{ 208, 215 }</string>
+	</dict>
+	<key>shape.12</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 175, 226 }</string>
+		<key>p1</key>
+		<string>{ 195, 226 }</string>
+	</dict>
+	<key>shape.13</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 203, 228 }</string>
+		<key>p1</key>
+		<string>{ 233, 228 }</string>
+	</dict>
+</dict>
+</plist>
