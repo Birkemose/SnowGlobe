@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>33674069-8A15-42C8-BA25-0CD1BB5EE43A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SnowGlobe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>367F1833-CC03-4E1A-9CB0-04E43275C146</key>
+		<string>https://github.com/Birkemose/SnowGlobe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SnowGlobe.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>367F1833-CC03-4E1A-9CB0-04E43275C146</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Birkemose/SnowGlobe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>367F1833-CC03-4E1A-9CB0-04E43275C146</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>367F1833-CC03-4E1A-9CB0-04E43275C146</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SnowGlobe</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -32,7 +32,14 @@
 
 const double    SnowGlobeSimulationInterval             = ( 1.0f / 60.0f );
 const double    SnowGlobeGravity                        = 1.00f;
-const double    SnowGlobeDamping                        = 1.05f;
+
+/**
+ *  Damping slightly above 1.00 gives by far the most "dynamic" and believeable simulation.
+ *  As particles will continue to gain speed, the simulation might get never get to rest, if there are no objects inside the globe, to slow them down
+ *  This probably also means, that for best simulation, damping has to be adjusted according to number of collideable segments inside globe
+ */
+const double    SnowGlobeDamping                        = 1.025f;
+
 const CGPoint   SnowGlobePosition                       = { 0.50, 0.60 };
 const double    SnowGlobeShakeStrength                  = 1.0f;
 

@@ -36,9 +36,11 @@ const int    SnowGlobeFlakeDisturberCount       = 25;
 const double SnowGlobeFlakeMass                 = 1.0f;
 const double SnowGlobeFlakeDisturberMass        = 250.0f;
 
-const double SnowGlobeFlakeSize                 = 1.5f;
+const double SnowGlobeFlakeSize                 = 3.0f;
+const double SnowGlobeFlakeRadius               = (SnowGlobeFlakeSize / 2);
 const double SnowGlobeFlakeElasticity           = 0.2f;
 const double SnowGlobeFlakeFriction             = 0.1f;
+const double SnowGlobeFlakeVelocityLimit        = 100.0f;
 
 const double SnowGlobeFlakeScaleMin             = 1.00f;
 const double SnowGlobeFlakeScaleMax             = 1.50f;
@@ -95,7 +97,7 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
     CGPoint p0, p1;
     p1 = CGPointMake(0, SnowGlobeGlassRadius);
 	// loop through segments
-	for (int count = 0; count <= SnowGlobeGlassSegmentCount; count ++)
+	for (int count = 1; count <= SnowGlobeGlassSegmentCount; count ++)
     {
 		// calculate position
 		p0 = p1;
@@ -161,16 +163,15 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
         
         // create the physics
 #if SNOWGLOBE_FLAKE_BOX != 0
-        double size = 2 * SnowGlobeFlakeSize;
-        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForBox(mass, size, size)];
-        shape = [ChipmunkPolyShape boxWithBody:body width:size height:size];
+        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForBox(mass, SnowGlobeFlakeSize, SnowGlobeFlakeSize)];
+        shape = [ChipmunkPolyShape boxWithBody:body width:SnowGlobeFlakeSize height:SnowGlobeFlakeSize];
 #else
-        double radius = SnowGlobeFlakeSize;
-        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForCircle(mass, 0, radius, CGPointZero)];
-        shape = [ChipmunkCircleShape circleWithBody:body radius:radius offset:CGPointZero];
+        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForCircle(mass, 0, SnowGlobeFlakeRadius, CGPointZero)];
+        shape = [ChipmunkCircleShape circleWithBody:body radius:SnowGlobeFlakeRadius offset:CGPointZero];
 #endif
         // set body data
         body.pos = pos;
+        body.velLimit = SnowGlobeFlakeVelocityLimit;
         
         // set shape data
         shape.elasticity= SnowGlobeFlakeElasticity;
