@@ -36,8 +36,8 @@
 
 //------------------------------------------------------------------------------
 
-
 @property (nonatomic, readonly) NSSet *chipmunkObjects;
+@property (nonatomic, readonly) float contentScale;
 
 //------------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@
 - (id)init;
 
 - (void)updatePositions;
-- (void)shake:(double)strength;
+- (void)shake:(CGPoint)pos strength:(double)strength;
 
 //------------------------------------------------------------------------------
 

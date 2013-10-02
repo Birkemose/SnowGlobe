@@ -7,7 +7,7 @@
             <key>flake.0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{26,28},{30,18}}</string>
+                <string>{{2,194},{30,18}}</string>
                 <key>offset</key>
                 <string>{1,-2}</string>
                 <key>rotated</key>
@@ -20,11 +20,11 @@
             <key>flake.1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{30,24}}</string>
+                <string>{{2,130},{30,24}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,4},{30,24}}</string>
                 <key>sourceSize</key>
@@ -33,11 +33,11 @@
             <key>flake.2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{34,2},{26,24}}</string>
+                <string>{{2,226},{26,24}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{3,5},{26,24}}</string>
                 <key>sourceSize</key>
@@ -46,7 +46,7 @@
             <key>flake.3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,28},{30,22}}</string>
+                <string>{{2,162},{30,22}}</string>
                 <key>offset</key>
                 <string>{0,-2}</string>
                 <key>rotated</key>
@@ -56,6 +56,19 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
+            <key>next.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{126,126}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{126,126}}</string>
+                <key>sourceSize</key>
+                <string>{128,128}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -64,9 +77,9 @@
             <key>realTextureFileName</key>
             <string>flakes-ipadhd.png</string>
             <key>size</key>
-            <string>{64,64}</string>
+            <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:92ffc82c4916497db10e763374d4924d:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:102bcc99e599030e7f6cd30ec90ed317:1/1$</string>
             <key>textureFileName</key>
             <string>flakes-ipadhd.png</string>
         </dict>

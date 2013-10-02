@@ -29,17 +29,19 @@
 #define __GAME_CONFIG_H
 
 //------------------------------------------------------------------------------
-/**
- *  Defines if snow flakes physics is created as a bow, or as a sphere
- *  Currently spheres seems to work best
- */
-#define SNOWGLOBE_FLAKE_BOX 0           
 
 /**
- *  Will show disturbers
+ *  Will show disturbers and blockers
  *  Dont enable ... it will ruin the illusion ...
  */
-#define SNOWGLOBE_DISTURBER_SHOW 0
+#define SNOWGLOBE_SPECIAL_SHOW 0
+
+/**
+ *  Enabled batching of snow flakes
+ *  Batching is useful when you render a lot of small particles, likes the snowflakes in this demo
+ *  Turn batching off, to see how much it matters. It is very dependent on device
+ */
+#define SNOWGLOBE_USE_BATCHING 1
 
 //------------------------------------------------------------------------------
 

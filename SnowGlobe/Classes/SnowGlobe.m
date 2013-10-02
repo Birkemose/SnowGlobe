@@ -29,8 +29,10 @@
 #import "SnowGlobeLayer.h"
 
 //------------------------------------------------------------------------------
+// a lot of constants
 
 const int    SnowGlobeFlakeCount                = 700;
+const int    SnowGlobeFlakeBlockerCount         = 70;
 const int    SnowGlobeFlakeDisturberCount       = 25;
 
 const double SnowGlobeFlakeMass                 = 1.0f;
@@ -39,13 +41,13 @@ const double SnowGlobeFlakeDisturberMass        = 250.0f;
 const double SnowGlobeFlakeSize                 = 3.0f;
 const double SnowGlobeFlakeRadius               = (SnowGlobeFlakeSize / 2);
 const double SnowGlobeFlakeElasticity           = 0.2f;
-const double SnowGlobeFlakeFriction             = 0.1f;
+const double SnowGlobeFlakeFriction             = 5.1f;
 const double SnowGlobeFlakeVelocityLimit        = 100.0f;
 
 const double SnowGlobeFlakeScaleMin             = 1.00f;
 const double SnowGlobeFlakeScaleMax             = 1.50f;
 const double SnowGlobeFlakeTilt                 = 30.0f;
-const Byte   SnowGlobeFlakeOpacity              = 180;
+const Byte   SnowGlobeFlakeOpacity              = 220;
 const int    SnowGlobeFlakeTextureCount         = 4;
 
 const double SnowGlobeGlassRadius               = 145.0f;
@@ -69,7 +71,13 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
 @implementation SnowGlobe
 {
 	NSMutableSet *_chipmunkObjects;
+#if SNOWGLOBE_USE_BATCHING != 0
     CCSpriteBatchNode *_batch;
+#else
+    CCNode *_batch;
+#endif
+    NSString *_name;
+    NSString *_location;
 }
 
 //------------------------------------------------------------------------------
@@ -84,13 +92,20 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
 - (id)init
 {
 	self = [super init];
-
+    
 	// chipmunk data
 	_chipmunkObjects = [[NSMutableSet set] retain];
 
 	// sprite batch node
+#if SNOWGLOBE_USE_BATCHING != 0
 	_batch = [CCSpriteBatchNode batchNodeWithFile:@"flakes.png" capacity:SnowGlobeFlakeCount];
+#else
+    _batch = [CCNode node];
+#endif
     [self addChild:_batch];
+    
+    // calculate placement scale
+    _contentScale = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 2.0f : 1.0f;
 	   
     // create the globe
 	double angle	= 0.0f;
@@ -162,13 +177,20 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
         double mass = (isDisturber) ? SnowGlobeFlakeDisturberMass : SnowGlobeFlakeMass;
         
         // create the physics
-#if SNOWGLOBE_FLAKE_BOX != 0
-        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForBox(mass, SnowGlobeFlakeSize, SnowGlobeFlakeSize)];
-        shape = [ChipmunkPolyShape boxWithBody:body width:SnowGlobeFlakeSize height:SnowGlobeFlakeSize];
-#else
-        body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForCircle(mass, 0, SnowGlobeFlakeRadius, CGPointZero)];
-        shape = [ChipmunkCircleShape circleWithBody:body radius:SnowGlobeFlakeRadius offset:CGPointZero];
+        if (count % (SnowGlobeFlakeCount / SnowGlobeFlakeBlockerCount))
+        {
+            body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForCircle(mass, 0, SnowGlobeFlakeRadius, CGPointZero)];
+            shape = [ChipmunkCircleShape circleWithBody:body radius:SnowGlobeFlakeRadius offset:CGPointZero];
+        }
+        else
+        {
+            body = [[ChipmunkBody alloc] initWithMass:mass andMoment:cpMomentForBox(mass, SnowGlobeFlakeSize, SnowGlobeFlakeSize)];
+            shape = [ChipmunkPolyShape boxWithBody:body width:SnowGlobeFlakeSize height:SnowGlobeFlakeSize];
+#if SNOWGLOBE_SPECIAL_SHOW != 0
+            flake.color = ccBLUE;
 #endif
+        }
+
         // set body data
         body.pos = pos;
         body.velLimit = SnowGlobeFlakeVelocityLimit;
@@ -181,7 +203,7 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
         shape.layers = SnowGlobeCollisionLayerAll;
         shape.collisionType	= SnowGlobeCollisionIdSnowFlakes;
         
-#if SNOWGLOBE_DISTURBER_SHOW != 0
+#if SNOWGLOBE_SPECIAL_SHOW != 0
         if (isDisturber) flake.color = ccRED;
 #endif
         
@@ -214,7 +236,7 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
 	for (CCSprite *flake in _batch.children)
     {
 		ChipmunkBody *body = (ChipmunkBody *)flake.userObject;
-
+        
 		// clamp the body pos to be inside globe
         if ((ccpLength(body.pos) > ( SnowGlobeGlassRadius - SnowGlobeGlassThickness)) || (body.pos.y < (SnowGlobeGlassFloor + SnowGlobeGlassThickness)))
         {
@@ -222,23 +244,22 @@ const Byte   SnowGlobeOverlayOpacity            = 128;
             if (body.pos.y < (SnowGlobeGlassFloor + SnowGlobeGlassThickness + SnowGlobeFlakeSize))
                 body.pos = ccp(body.pos.x, SnowGlobeGlassFloor + SnowGlobeGlassThickness + SnowGlobeFlakeSize);
             body.force = CGPointZero;
-            CCLOG(@"clamped");
         }
         
         // set position
-		flake.position = body.pos;
+		flake.position = ccpMult(body.pos, _contentScale);
 	}
 }
 
 //------------------------------------------------------------------------------
 
-- (void)shake:(double)strength
+- (void)shake:(CGPoint)pos strength:(double)strength
 {
     strength = clampf(strength, -SnowGlobeMaxShakeStrength, SnowGlobeMaxShakeStrength);
 	for (CCSprite *flake in _batch.children)
     {
 		ChipmunkBody *body = (ChipmunkBody *)flake.userObject;
-        CGPoint force = body.pos;
+        CGPoint force = ccpSub( pos, body.pos);
         force = ccpMult( force, SnowGlobeShakeGain * CCRANDOM_MINUS1_1() * body.mass * strength );
         //
         [body applyImpulse:force offset:CGPointZero];

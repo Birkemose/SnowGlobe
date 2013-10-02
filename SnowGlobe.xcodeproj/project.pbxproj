@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A60F286817F31364007E1490 /* libChipmunkPro-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A60F286617F31364007E1490 /* libChipmunkPro-iPhone.a */; };
-		A62D240417F1A4BF00416437 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62D240317F1A4BF00416437 /* Images.xcassets */; };
 		A669BC9C17F19A8200F9CFD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669BC9B17F19A8200F9CFD2 /* QuartzCore.framework */; };
 		A669BC9E17F19A8200F9CFD2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669BC9D17F19A8200F9CFD2 /* OpenGLES.framework */; };
 		A669BCA017F19A8200F9CFD2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669BC9F17F19A8200F9CFD2 /* OpenAL.framework */; };
@@ -141,26 +140,28 @@
 		A669BE3F17F19A8400F9CFD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A669BE3E17F19A8400F9CFD2 /* main.m */; };
 		A669BE4217F19A8400F9CFD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A669BE4117F19A8400F9CFD2 /* AppDelegate.m */; };
 		A669BE4817F19A8400F9CFD2 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A669BE4717F19A8400F9CFD2 /* IntroLayer.m */; };
+		A673294117F84F53006CAE6C /* mermaid-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A673293D17F84F53006CAE6C /* mermaid-hd.png */; };
+		A673294217F84F53006CAE6C /* mermaid-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A673293E17F84F53006CAE6C /* mermaid-ipadhd.png */; };
+		A673294317F84F53006CAE6C /* mermaid.plist in Resources */ = {isa = PBXBuildFile; fileRef = A673293F17F84F53006CAE6C /* mermaid.plist */; };
+		A673294417F84F53006CAE6C /* mermaid.png in Resources */ = {isa = PBXBuildFile; fileRef = A673294017F84F53006CAE6C /* mermaid.png */; };
+		A673294817F85372006CAE6C /* intro-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A673294517F85372006CAE6C /* intro-hd.png */; };
+		A673294A17F85372006CAE6C /* intro-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A673294717F85372006CAE6C /* intro-ipadhd.png */; };
+		A674CC7A17F859A30022096C /* tajmahal.plist in Resources */ = {isa = PBXBuildFile; fileRef = A674CC7817F859A30022096C /* tajmahal.plist */; };
+		A674CC7B17F859A30022096C /* tajmahal.png in Resources */ = {isa = PBXBuildFile; fileRef = A674CC7917F859A30022096C /* tajmahal.png */; };
 		A684286C17F5ACD900074710 /* flakes-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = A684286617F5ACD900074710 /* flakes-hd.plist */; };
 		A684286D17F5ACD900074710 /* flakes-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684286717F5ACD900074710 /* flakes-hd.png */; };
 		A684286E17F5ACD900074710 /* flakes-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = A684286817F5ACD900074710 /* flakes-ipadhd.plist */; };
 		A684286F17F5ACD900074710 /* flakes-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684286917F5ACD900074710 /* flakes-ipadhd.png */; };
 		A684287017F5ACD900074710 /* snowglobe-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684286A17F5ACD900074710 /* snowglobe-hd.png */; };
 		A684287117F5ACD900074710 /* snowglobe-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684286B17F5ACD900074710 /* snowglobe-ipadhd.png */; };
-		A684287517F5B28500074710 /* mermaid-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684287317F5B28500074710 /* mermaid-hd.png */; };
-		A684287617F5B28500074710 /* mermaid-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A684287417F5B28500074710 /* mermaid-ipadhd.png */; };
-		A6C607EA17F32D7B000D058E /* mermaid.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E417F32D7B000D058E /* mermaid.plist */; };
-		A6C607EB17F32D7B000D058E /* mermaid.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E517F32D7B000D058E /* mermaid.png */; };
-		A6C607EC17F32D7B000D058E /* tajmahal.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E617F32D7B000D058E /* tajmahal.plist */; };
-		A6C607ED17F32D7B000D058E /* tajmahal.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E717F32D7B000D058E /* tajmahal.png */; };
-		A6C607EE17F32D7B000D058E /* tivoli.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E817F32D7B000D058E /* tivoli.plist */; };
-		A6C607EF17F32D7B000D058E /* tivoli.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C607E917F32D7B000D058E /* tivoli.png */; };
 		A6D4303C17F38E300019DD63 /* intro-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D4303A17F38E300019DD63 /* intro-ipad.png */; };
 		A6D4303D17F38E300019DD63 /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D4303B17F38E300019DD63 /* intro.png */; };
 		A6D4304217F38E4B0019DD63 /* flakes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D4303F17F38E4B0019DD63 /* flakes.plist */; };
 		A6D4304317F38E4B0019DD63 /* flakes.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D4304017F38E4B0019DD63 /* flakes.png */; };
 		A6D4304417F38E4B0019DD63 /* snowglobe.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D4304117F38E4B0019DD63 /* snowglobe.png */; };
 		A6D4304617F39ACD0019DD63 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4304517F39ACD0019DD63 /* ImageIO.framework */; };
+		A6DA81A517F87C8B00A548D8 /* tajmahal-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DA81A317F87C8B00A548D8 /* tajmahal-hd.png */; };
+		A6DA81A617F87C8B00A548D8 /* tajmahal-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = A6DA81A417F87C8B00A548D8 /* tajmahal-ipadhd.png */; };
 		A6DAB13517F1BE1600A49E86 /* SnowGlobeContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB12A17F1BE1600A49E86 /* SnowGlobeContent.m */; };
 		A6DAB13617F1BE1600A49E86 /* SnowGlobe.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB12C17F1BE1600A49E86 /* SnowGlobe.m */; };
 		A6DAB13817F1BE1600A49E86 /* SnowGlobeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB13017F1BE1600A49E86 /* SnowGlobeLayer.m */; };
@@ -210,7 +211,6 @@
 		A60F286517F31364007E1490 /* cpPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpPolyline.h; sourceTree = "<group>"; };
 		A60F286617F31364007E1490 /* libChipmunkPro-iPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libChipmunkPro-iPhone.a"; sourceTree = "<group>"; };
 		A60F286717F31364007E1490 /* ObjectiveChipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveChipmunk.h; sourceTree = "<group>"; };
-		A62D240317F1A4BF00416437 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A669BC9817F19A8200F9CFD2 /* SnowGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A669BC9B17F19A8200F9CFD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A669BC9D17F19A8200F9CFD2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -489,26 +489,28 @@
 		A669BE4117F19A8400F9CFD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A669BE4617F19A8400F9CFD2 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		A669BE4717F19A8400F9CFD2 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		A673293D17F84F53006CAE6C /* mermaid-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mermaid-hd.png"; path = "Resources/Content/mermaid/mermaid-hd.png"; sourceTree = "<group>"; };
+		A673293E17F84F53006CAE6C /* mermaid-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mermaid-ipadhd.png"; path = "Resources/Content/mermaid/mermaid-ipadhd.png"; sourceTree = "<group>"; };
+		A673293F17F84F53006CAE6C /* mermaid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = mermaid.plist; path = Resources/Content/mermaid/mermaid.plist; sourceTree = "<group>"; };
+		A673294017F84F53006CAE6C /* mermaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mermaid.png; path = Resources/Content/mermaid/mermaid.png; sourceTree = "<group>"; };
+		A673294517F85372006CAE6C /* intro-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "intro-hd.png"; path = "Resources/intro-hd.png"; sourceTree = "<group>"; };
+		A673294717F85372006CAE6C /* intro-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "intro-ipadhd.png"; path = "Resources/intro-ipadhd.png"; sourceTree = "<group>"; };
+		A674CC7817F859A30022096C /* tajmahal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = tajmahal.plist; path = Resources/Content/tajmahal/tajmahal.plist; sourceTree = "<group>"; };
+		A674CC7917F859A30022096C /* tajmahal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tajmahal.png; path = Resources/Content/tajmahal/tajmahal.png; sourceTree = "<group>"; };
 		A684286617F5ACD900074710 /* flakes-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "flakes-hd.plist"; path = "Resources/flakes-hd.plist"; sourceTree = "<group>"; };
 		A684286717F5ACD900074710 /* flakes-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flakes-hd.png"; path = "Resources/flakes-hd.png"; sourceTree = "<group>"; };
 		A684286817F5ACD900074710 /* flakes-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "flakes-ipadhd.plist"; path = "Resources/flakes-ipadhd.plist"; sourceTree = "<group>"; };
 		A684286917F5ACD900074710 /* flakes-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flakes-ipadhd.png"; path = "Resources/flakes-ipadhd.png"; sourceTree = "<group>"; };
 		A684286A17F5ACD900074710 /* snowglobe-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "snowglobe-hd.png"; path = "Resources/snowglobe-hd.png"; sourceTree = "<group>"; };
 		A684286B17F5ACD900074710 /* snowglobe-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "snowglobe-ipadhd.png"; path = "Resources/snowglobe-ipadhd.png"; sourceTree = "<group>"; };
-		A684287317F5B28500074710 /* mermaid-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mermaid-hd.png"; path = "Resources/Content/mermaid-hd.png"; sourceTree = "<group>"; };
-		A684287417F5B28500074710 /* mermaid-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mermaid-ipadhd.png"; path = "Resources/Content/mermaid-ipadhd.png"; sourceTree = "<group>"; };
-		A6C607E417F32D7B000D058E /* mermaid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = mermaid.plist; path = Resources/Content/mermaid.plist; sourceTree = "<group>"; };
-		A6C607E517F32D7B000D058E /* mermaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mermaid.png; path = Resources/Content/mermaid.png; sourceTree = "<group>"; };
-		A6C607E617F32D7B000D058E /* tajmahal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = tajmahal.plist; path = Resources/Content/tajmahal.plist; sourceTree = "<group>"; };
-		A6C607E717F32D7B000D058E /* tajmahal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tajmahal.png; path = Resources/Content/tajmahal.png; sourceTree = "<group>"; };
-		A6C607E817F32D7B000D058E /* tivoli.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = tivoli.plist; path = Resources/Content/tivoli.plist; sourceTree = "<group>"; };
-		A6C607E917F32D7B000D058E /* tivoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tivoli.png; path = Resources/Content/tivoli.png; sourceTree = "<group>"; };
 		A6D4303A17F38E300019DD63 /* intro-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "intro-ipad.png"; path = "Resources/intro-ipad.png"; sourceTree = "<group>"; };
 		A6D4303B17F38E300019DD63 /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro.png; path = Resources/intro.png; sourceTree = "<group>"; };
 		A6D4303F17F38E4B0019DD63 /* flakes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = flakes.plist; path = Resources/flakes.plist; sourceTree = "<group>"; };
 		A6D4304017F38E4B0019DD63 /* flakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flakes.png; path = Resources/flakes.png; sourceTree = "<group>"; };
 		A6D4304117F38E4B0019DD63 /* snowglobe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snowglobe.png; path = Resources/snowglobe.png; sourceTree = "<group>"; };
 		A6D4304517F39ACD0019DD63 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A6DA81A317F87C8B00A548D8 /* tajmahal-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tajmahal-hd.png"; path = "Resources/Content/tajmahal/tajmahal-hd.png"; sourceTree = "<group>"; };
+		A6DA81A417F87C8B00A548D8 /* tajmahal-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tajmahal-ipadhd.png"; path = "Resources/Content/tajmahal/tajmahal-ipadhd.png"; sourceTree = "<group>"; };
 		A6DAB12817F1BE1600A49E86 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		A6DAB12917F1BE1600A49E86 /* SnowGlobeContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowGlobeContent.h; sourceTree = "<group>"; };
 		A6DAB12A17F1BE1600A49E86 /* SnowGlobeContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowGlobeContent.m; sourceTree = "<group>"; };
@@ -661,7 +663,6 @@
 		A669BCB017F19A8200F9CFD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A62D240317F1A4BF00416437 /* Images.xcassets */,
 				A6DAB12117F1B80300A49E86 /* Stock */,
 				A6DAB12217F1B81400A49E86 /* Backgrounds */,
 				A6D4303E17F38E390019DD63 /* Globe */,
@@ -1036,13 +1037,24 @@
 			path = SnowGlobe;
 			sourceTree = "<group>";
 		};
+		A674CC7717F859860022096C /* tajmahal */ = {
+			isa = PBXGroup;
+			children = (
+				A6DA81A417F87C8B00A548D8 /* tajmahal-ipadhd.png */,
+				A6DA81A317F87C8B00A548D8 /* tajmahal-hd.png */,
+				A674CC7917F859A30022096C /* tajmahal.png */,
+				A674CC7817F859A30022096C /* tajmahal.plist */,
+			);
+			name = tajmahal;
+			sourceTree = "<group>";
+		};
 		A684287217F5B26D00074710 /* mermaid */ = {
 			isa = PBXGroup;
 			children = (
-				A684287417F5B28500074710 /* mermaid-ipadhd.png */,
-				A684287317F5B28500074710 /* mermaid-hd.png */,
-				A6C607E517F32D7B000D058E /* mermaid.png */,
-				A6C607E417F32D7B000D058E /* mermaid.plist */,
+				A673293E17F84F53006CAE6C /* mermaid-ipadhd.png */,
+				A673293D17F84F53006CAE6C /* mermaid-hd.png */,
+				A673294017F84F53006CAE6C /* mermaid.png */,
+				A673293F17F84F53006CAE6C /* mermaid.plist */,
 			);
 			name = mermaid;
 			sourceTree = "<group>";
@@ -1051,10 +1063,7 @@
 			isa = PBXGroup;
 			children = (
 				A684287217F5B26D00074710 /* mermaid */,
-				A6C607E617F32D7B000D058E /* tajmahal.plist */,
-				A6C607E717F32D7B000D058E /* tajmahal.png */,
-				A6C607E817F32D7B000D058E /* tivoli.plist */,
-				A6C607E917F32D7B000D058E /* tivoli.png */,
+				A674CC7717F859860022096C /* tajmahal */,
 			);
 			name = Content;
 			sourceTree = "<group>";
@@ -1097,8 +1106,10 @@
 		A6DAB12217F1B81400A49E86 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				A6D4303A17F38E300019DD63 /* intro-ipad.png */,
 				A6D4303B17F38E300019DD63 /* intro.png */,
+				A673294517F85372006CAE6C /* intro-hd.png */,
+				A673294717F85372006CAE6C /* intro-ipadhd.png */,
+				A6D4303A17F38E300019DD63 /* intro-ipad.png */,
 			);
 			name = Backgrounds;
 			sourceTree = "<group>";
@@ -1168,20 +1179,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C607EC17F32D7B000D058E /* tajmahal.plist in Resources */,
-				A6C607EE17F32D7B000D058E /* tivoli.plist in Resources */,
+				A6DA81A617F87C8B00A548D8 /* tajmahal-ipadhd.png in Resources */,
 				A684286E17F5ACD900074710 /* flakes-ipadhd.plist in Resources */,
 				A684287017F5ACD900074710 /* snowglobe-hd.png in Resources */,
+				A673294117F84F53006CAE6C /* mermaid-hd.png in Resources */,
+				A673294817F85372006CAE6C /* intro-hd.png in Resources */,
 				A669BCC217F19A8200F9CFD2 /* Icon.png in Resources */,
-				A684287517F5B28500074710 /* mermaid-hd.png in Resources */,
 				A684286C17F5ACD900074710 /* flakes-hd.plist in Resources */,
+				A674CC7A17F859A30022096C /* tajmahal.plist in Resources */,
+				A673294317F84F53006CAE6C /* mermaid.plist in Resources */,
 				A6D4304317F38E4B0019DD63 /* flakes.png in Resources */,
 				A669BE2017F19A8400F9CFD2 /* ChangeLog in Resources */,
 				A669BCB417F19A8200F9CFD2 /* Default@2x.png in Resources */,
-				A62D240417F1A4BF00416437 /* Images.xcassets in Resources */,
 				A669BCBE17F19A8200F9CFD2 /* Icon-Small.png in Resources */,
 				A684286D17F5ACD900074710 /* flakes-hd.png in Resources */,
-				A6C607EA17F32D7B000D058E /* mermaid.plist in Resources */,
 				A669BCBA17F19A8200F9CFD2 /* Icon-72.png in Resources */,
 				A684287117F5ACD900074710 /* snowglobe-ipadhd.png in Resources */,
 				A669BCB217F19A8200F9CFD2 /* Default.png in Resources */,
@@ -1189,16 +1200,17 @@
 				A669BCC717F19A8200F9CFD2 /* iTunesArtwork in Resources */,
 				A6D4303C17F38E300019DD63 /* intro-ipad.png in Resources */,
 				A669BCC017F19A8200F9CFD2 /* Icon-Small@2x.png in Resources */,
+				A674CC7B17F859A30022096C /* tajmahal.png in Resources */,
 				A6D4303D17F38E300019DD63 /* intro.png in Resources */,
+				A673294217F84F53006CAE6C /* mermaid-ipadhd.png in Resources */,
 				A6D4304417F38E4B0019DD63 /* snowglobe.png in Resources */,
-				A6C607EF17F32D7B000D058E /* tivoli.png in Resources */,
 				A669BCB617F19A8200F9CFD2 /* Default-568h@2x.png in Resources */,
 				A669BCC417F19A8200F9CFD2 /* Icon@2x.png in Resources */,
+				A673294A17F85372006CAE6C /* intro-ipadhd.png in Resources */,
 				A6D4304217F38E4B0019DD63 /* flakes.plist in Resources */,
-				A684287617F5B28500074710 /* mermaid-ipadhd.png in Resources */,
-				A6C607ED17F32D7B000D058E /* tajmahal.png in Resources */,
+				A673294417F84F53006CAE6C /* mermaid.png in Resources */,
+				A6DA81A517F87C8B00A548D8 /* tajmahal-hd.png in Resources */,
 				A684286F17F5ACD900074710 /* flakes-ipadhd.png in Resources */,
-				A6C607EB17F32D7B000D058E /* mermaid.png in Resources */,
 				A6FC455B17F1A55D00D7A579 /* Default-Portrait~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1382,15 +1394,16 @@
 				GCC_PREFIX_HEADER = SnowGlobe/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"SnowGlobe/libs/kazmath/include\"";
 				INFOPLIST_FILE = SnowGlobe/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/larsbirkemose/Desktop/Work/SnowGlobe/SnowGlobe/libs/Chipmunk/ChipmunkPro-iPhone-Trial",
 					"/Users/larsbirkemose/Desktop/Work/SnowGlobe/SnowGlobe/libs/ChipmunkPro-iPhone-Trial",
 				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
 					"-ObjC",
+					"-Wall",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1409,15 +1422,16 @@
 				GCC_PREFIX_HEADER = SnowGlobe/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"SnowGlobe/libs/kazmath/include\"";
 				INFOPLIST_FILE = SnowGlobe/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/larsbirkemose/Desktop/Work/SnowGlobe/SnowGlobe/libs/Chipmunk/ChipmunkPro-iPhone-Trial",
 					"/Users/larsbirkemose/Desktop/Work/SnowGlobe/SnowGlobe/libs/ChipmunkPro-iPhone-Trial",
 				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
 					"-ObjC",
+					"-Wall",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

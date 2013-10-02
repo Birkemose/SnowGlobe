@@ -60,14 +60,14 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
 
 //------------------------------------------------------------------------------
 
-+ (SnowGlobeContent *)contentWithDictionary:(NSString *)dict andSpace:(ChipmunkSpace *)space
++ (SnowGlobeContent *)contentWithPlist:(NSString *)plist andSpace:(ChipmunkSpace *)space
 {
-	return([[[self alloc] initWithDictionary:dict andSpace:space] autorelease]);
+	return([[[self alloc] initWithPlist:plist andSpace:space] autorelease]);
 }
 
 //------------------------------------------------------------------------------
 
-- (id)initWithDictionary:(NSString *)dict andSpace:(ChipmunkSpace *)space
+- (id)initWithPlist:(NSString *)plist andSpace:(ChipmunkSpace *)space
 {
 	self = [super init];
 	   
@@ -75,8 +75,8 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
 	_chipmunkObjects = [[NSMutableSet set] retain];
     _space = space;
     
-    // load content
-    [self addContentWithDictionary:dict];
+    // create content
+    [self createContentWithPlist:plist];
     
 	// done
 	return(self);
@@ -95,17 +95,21 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
 
 //------------------------------------------------------------------------------
 
-- (void)addContentWithDictionary:(NSString *)dict
+- (void)createContentWithPlist:(NSString *)plist
 {
-    // load content dictionry
-	NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:dict]];
+    [self removeContent];
 
+    // load content dictionry
+	NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:plist]];
+
+    // load name and location
+    _name = [[dictionary objectForKey:@"name"] retain];
+    _location = [[dictionary objectForKey:@"location"] retain];
+    
 	// create background
 	_background = [CCSprite spriteWithFile:[dictionary objectForKey:@"background"]];
     [self addChild:_background];
 	
-    return;
-    
     // this defines the size of the physics area
     // upper left corner is 0,0 to match textures
     // if this size mathces one of the tetures used ( ex for iPhone non retina ), the coordinates matches the texture coordinates
@@ -114,7 +118,7 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
     if ([[dictionary objectForKey:@"shape.enabled"] boolValue])
     {
         // find upper left corner of image
-		CGPoint offset = CGPointMake(-_background.contentSize.width * _background.anchorPoint.x, _background.contentSize.height * _background.anchorPoint.y);
+		CGPoint offset = CGPointMake(-shapeSize.width * 0.5f, shapeSize.height * 0.5f);
 		// load shapes
 		for (int index = 0; index < SnowGlobeMaxShapes; index ++) {
 			NSDictionary *shapeDir = [dictionary objectForKey:[NSString stringWithFormat:@"shape.%d", index]];
@@ -125,10 +129,8 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
                     // load shape data and calculate position
                     CGPoint p0 = CGPointFromString([shapeDir objectForKey:@"p0"]);
                     CGPoint p1 = CGPointFromString([shapeDir objectForKey:@"p1"]);
-                    p0 = CGPointMake((offset.x + p0.x) * _background.contentSize.width / shapeSize.width,
-                                     (offset.y - p0.y) * _background.contentSize.height / shapeSize.height);
-                    p1 = CGPointMake((offset.x + p1.x) * _background.contentSize.width / shapeSize.width,
-                                     (offset.y - p1.y) * _background.contentSize.height / shapeSize.height);
+                    p0 = CGPointMake(offset.x + p0.x, offset.y - p0.y);
+                    p1 = CGPointMake(offset.x + p1.x, offset.y - p1.y);
                     // create shape
                     ChipmunkShape *shape = [ChipmunkSegmentShape segmentWithBody:[ChipmunkBody staticBody] from:p0 to:p1 radius:SnowGlobeSegmentRadius];
                     shape.elasticity = SnowGlobeSegmentElasticity;
@@ -144,7 +146,6 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
                     // add it to chipmunk objects
                     [_chipmunkObjects addObject:shape];
                 }
-                [shapeDir release];
 			}
 		}
 		
@@ -164,6 +165,8 @@ const int       SnowGlobeCollisionLayerAll              = 0x0F;
 
 - (void)removeContent
 {
+    [_location release];
+    [_name release];
     [self removeAllChildrenWithCleanup:YES];
     [_chipmunkObjects removeAllObjects];
     [_space removeCollisionHandlerForTypeA:SnowGlobeCollisionIdSnowFlakes andB:SnowGlobeCollisionIdContent];

@@ -7,7 +7,7 @@
             <key>flake.0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{22,2},{8,6}}</string>
+                <string>{{2,56},{8,6}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,11 +20,11 @@
             <key>flake.1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{12,2},{8,6}}</string>
+                <string>{{2,46},{8,6}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{8,6}}</string>
                 <key>sourceSize</key>
@@ -33,7 +33,7 @@
             <key>flake.2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,10},{6,6}}</string>
+                <string>{{10,36},{6,6}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,15 +46,28 @@
             <key>flake.3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{8,6}}</string>
+                <string>{{2,36},{8,6}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,1},{8,6}}</string>
+                <key>sourceSize</key>
+                <string>{8,8}</string>
+            </dict>
+            <key>next.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,1},{8,6}}</string>
+                <string>{{0,0},{32,32}}</string>
                 <key>sourceSize</key>
-                <string>{8,8}</string>
+                <string>{32,32}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -64,9 +77,9 @@
             <key>realTextureFileName</key>
             <string>flakes.png</string>
             <key>size</key>
-            <string>{32,32}</string>
+            <string>{64,64}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:6114a70358018d24a9e3a131a0fe06cf:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:2799e188ccf7c58ec9c38d4bf45fba62:1/1$</string>
             <key>textureFileName</key>
             <string>flakes.png</string>
         </dict>

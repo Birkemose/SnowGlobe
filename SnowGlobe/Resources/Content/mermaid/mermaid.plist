@@ -17,126 +17,126 @@
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 137, 27 }</string>
+		<string>{ 126,34 }</string>
 		<key>p1</key>
-		<string>{ 158, 27 }</string>
+		<string>{ 130, 36 }</string>
 	</dict>
 	<key>shape.1</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 124, 35 }</string>
+		<string>{ 130, 36 }</string>
 		<key>p1</key>
-		<string>{ 136, 35 }</string>
+		<string>{ 144, 28 }</string>
 	</dict>
 	<key>shape.2</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 147, 45 }</string>
+		<string>{ 144, 28 }</string>
 		<key>p1</key>
-		<string>{ 166, 45 }</string>
+		<string>{ 158, 28 }</string>
 	</dict>
 	<key>shape.3</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 117, 84 }</string>
+		<string>{ 132, 80 }</string>
 		<key>p1</key>
-		<string>{ 130, 84 }</string>
+		<string>{ 146, 80 }</string>
 	</dict>
 	<key>shape.4</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 169, 81 }</string>
+		<string>{ 168, 78 }</string>
 		<key>p1</key>
-		<string>{ 182, 81 }</string>
+		<string>{ 183, 78 }</string>
 	</dict>
 	<key>shape.5</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 184, 89 }</string>
+		<string>{ 182, 85 }</string>
 		<key>p1</key>
-		<string>{ 195, 89 }</string>
+		<string>{ 193, 85 }</string>
 	</dict>
 	<key>shape.6</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 133, 179 }</string>
+		<string>{ 121, 162 }</string>
 		<key>p1</key>
-		<string>{ 150, 179 }</string>
+		<string>{ 124, 164 }</string>
 	</dict>
 	<key>shape.7</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 113, 183 }</string>
+		<string>{ 124, 164 }</string>
 		<key>p1</key>
-		<string>{ 133, 183 }</string>
+		<string>{ 147, 160 }</string>
 	</dict>
 	<key>shape.8</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 115, 201 }</string>
+		<string>{ 147, 160 }</string>
 		<key>p1</key>
-		<string>{ 134, 201 }</string>
+		<string>{ 174, 148 }</string>
 	</dict>
 	<key>shape.9</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 56, 212 }</string>
+		<string>{ 85, 185 }</string>
 		<key>p1</key>
-		<string>{ 97, 212 }</string>
+		<string>{ 112, 185 }</string>
 	</dict>
 	<key>shape.10</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 64, 226 }</string>
+		<string>{ 126, 180 }</string>
 		<key>p1</key>
-		<string>{ 111, 226 }</string>
+		<string>{ 157, 180 }</string>
 	</dict>
 	<key>shape.11</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 194, 215 }</string>
+		<string>{ 147, 201 }</string>
 		<key>p1</key>
-		<string>{ 208, 215 }</string>
+		<string>{ 178, 201 }</string>
 	</dict>
 	<key>shape.12</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 175, 226 }</string>
+		<string>{ 180, 208 }</string>
 		<key>p1</key>
-		<string>{ 195, 226 }</string>
+		<string>{ 213, 208 }</string>
 	</dict>
 	<key>shape.13</key>
 	<dict>
 		<key>enabled</key>
 		<true/>
 		<key>p0</key>
-		<string>{ 203, 228 }</string>
+		<string>{ 197, 200 }</string>
 		<key>p1</key>
-		<string>{ 233, 228 }</string>
+		<string>{ 206, 200 }</string>
 	</dict>
 </dict>
 </plist>

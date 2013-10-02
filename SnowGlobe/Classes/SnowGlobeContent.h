@@ -50,14 +50,15 @@ extern const int    SnowGlobeCollisionLayerAll;
 //------------------------------------------------------------------------------
 
 @property (nonatomic, readonly) NSSet *chipmunkObjects;
+@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) NSString *location;
 
 //------------------------------------------------------------------------------
 
-+ (SnowGlobeContent *)contentWithDictionary:(NSString *)dict andSpace:(ChipmunkSpace *)space;
-- (id)initWithDictionary:(NSString *)dict andSpace:(ChipmunkSpace *)space;
++ (SnowGlobeContent *)contentWithPlist:(NSString *)plist andSpace:(ChipmunkSpace *)space;
+- (id)initWithPlist:(NSString *)plist andSpace:(ChipmunkSpace *)space;
 
-- (void)addContentWithDictionary:(NSString *)dict;
-- (void)removeContent;
+- (void)createContentWithPlist:(NSString *)plist;
 
 //------------------------------------------------------------------------------
 

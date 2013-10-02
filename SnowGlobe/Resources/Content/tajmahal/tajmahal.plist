@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Taj Mahal</string>
+	<key>location</key>
+	<string>Agra, India</string>
+	<key>background</key>
+	<string>tajmahal.png</string>
+	<key>shape.enabled</key>
+	<true/>
+	<key>shape.size</key>
+	<string>{ 300, 300 }</string>
+	<key>shape.0</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 133, 50 }</string>
+		<key>p1</key>
+		<string>{ 166, 50 }</string>
+	</dict>
+	<key>shape.1</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 80, 112 }</string>
+		<key>p1</key>
+		<string>{ 93, 112 }</string>
+	</dict>
+	<key>shape.2</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 206, 110 }</string>
+		<key>p1</key>
+		<string>{ 218, 110 }</string>
+	</dict>
+	<key>shape.3</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 39, 151 }</string>
+		<key>p1</key>
+		<string>{ 54, 151 }</string>
+	</dict>
+	<key>shape.4</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 62, 147 }</string>
+		<key>p1</key>
+		<string>{ 102, 147 }</string>
+	</dict>
+	<key>shape.5</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 103, 132 }</string>
+		<key>p1</key>
+		<string>{ 196, 132 }</string>
+	</dict>
+	<key>shape.6</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 198, 147 }</string>
+		<key>p1</key>
+		<string>{ 236, 147 }</string>
+	</dict>
+	<key>shape.7</key>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>p0</key>
+		<string>{ 245, 150 }</string>
+		<key>p1</key>
+		<string>{ 261, 150 }</string>
+	</dict>
+</dict>
+</plist>
